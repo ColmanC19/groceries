@@ -19,13 +19,15 @@ $(document).ready(function(){
     var item2 = $("#item2").val();
     var item3 = $("#item3").val();
 
-    var items = [item, " ", item2, " " , item3];
+    var items = []
+    items.push(item, item2, item3);
        items.sort()
+         console.log(items);
       $("#result").append(items);
 
 
 
-  console.log(items);
+
   event.preventDefault()
 
   });
